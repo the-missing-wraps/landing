@@ -1,23 +1,35 @@
 .header {
     background-color: black;
-    height: 50px;
+    height: 100px;
     width: 100%;
 }
 
 .banner {
-    height: 100vh;
+    height: calc(100vh - 100px);
     width: 100%;
-    background-image: url("../../public/highway_bg.jpg");
+    /*background-image: url("../../public/highway_bg.jpg");*/
+    background-image: url("../../public/driving_bg.jpg");
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-container {
+    position: absolute;
+    right: 0;
+    width: 40%;
+    max-width: 600px;
+    height: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .info {
-    position: absolute;
-    right: 0;
-    width: 50%;
-    max-width: 600px;
+    width: 90%;
+    height: 90%;
     background-color: rgb(255 255 255 / 0.5);
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +40,10 @@
 }
 
 .services {
-    background-color: lightyellow;
+    background-color: black;
     height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
