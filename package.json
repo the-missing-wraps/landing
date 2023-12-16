@@ -7,7 +7,9 @@
   "scripts": {
     "transpile": "tsc -p source",
     "start": "node dist/main.js",
-    "serve": "npm run transpile && npm start"
+    "serve": "npm run transpile && npm start",
+    "lint": "eslint source --ext ts --format codeframe",
+    "lint:fix": "eslint source --ext ts --format codeframe --fix"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +17,7 @@
     "fastify": "^4.25.1"
   },
   "devDependencies": {
+    "@euberdeveloper/eslint-plugin": "^2.6.0",
     "@types/node": "^20.10.4",
     "typescript": "^5.3.3"
   }
