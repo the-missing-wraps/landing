@@ -15,12 +15,11 @@ const ContactDialog: FC<props> = ({open, handleClose}) => {
 
     return (
         <Dialog open={open} onClose={handleClose}>
-            <DialogTitle>Subscribe</DialogTitle>
+            <DialogTitle>Contact Us</DialogTitle>
             <form onSubmit={handleSubmit}>
             <DialogContent>
                 <DialogContentText>
-                    To subscribe to this website, please enter your email address here. We
-                    will send updates occasionally.
+                    Want to know more about our services? Please leave your contact here.
                 </DialogContentText>
                 <TextField
                     autoFocus
