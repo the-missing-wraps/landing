@@ -10,6 +10,11 @@ interface props {
 const ContactDialog: FC<props> = ({open, handleClose}) => {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
+        const form = e.currentTarget;
+        const formData = new FormData(form as HTMLFormElement);
+        const name = formData.get("name");
+        const email = formData.get("email");
+        console.log(name, email);
         handleClose();
     };
 
@@ -27,6 +32,7 @@ const ContactDialog: FC<props> = ({open, handleClose}) => {
                     margin="dense"
                     id="name"
                     label="Name"
+                    name="name"
                     type="text"
                     fullWidth
                     variant="standard"
@@ -36,6 +42,7 @@ const ContactDialog: FC<props> = ({open, handleClose}) => {
                     margin="dense"
                     id="surname"
                     label="Surname"
+                    name="surname"
                     type="text"
                     fullWidth
                     variant="standard"
@@ -45,6 +52,7 @@ const ContactDialog: FC<props> = ({open, handleClose}) => {
                     margin="dense"
                     id="company"
                     label="Company"
+                    name="company"
                     type="text"
                     fullWidth
                     variant="standard"
@@ -54,6 +62,7 @@ const ContactDialog: FC<props> = ({open, handleClose}) => {
                     margin="dense"
                     id="email"
                     label="Email Address"
+                    name="email"
                     type="email"
                     fullWidth
                     variant="standard"
@@ -62,6 +71,7 @@ const ContactDialog: FC<props> = ({open, handleClose}) => {
                     margin="dense"
                     id="phone"
                     label="Phone Number"
+                    name="phone"
                     type="tel"
                     fullWidth
                     variant="standard"
