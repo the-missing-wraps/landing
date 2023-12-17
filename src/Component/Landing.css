@@ -7,7 +7,7 @@
 }
 
 .banner {
-    height: calc(100vh - 100px);
+    height: calc(90vh - 100px);
     width: 100%;
     /*background-image: url("../../public/highway_bg.jpg");*/
     background-image: url("../../public/driving_bg.jpg");
@@ -31,27 +31,51 @@
 .info {
     width: 90%;
     height: 90%;
-    background-color: rgb(255 255 255 / 0.5);
+    /*background-color: rgb(255 255 255 / 0.5);*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.buttons {
-    position: absolute;
-    right: 10px;
+.logo {
+    width: 80%;
+}
+
+.buttons-top {
+    /*position: absolute;*/
+    /*right: 10px;*/
     display: flex;
     width: 300px;
     align-items: center;
     justify-content: space-evenly;
 }
 
+.bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-bottom {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#page2 {
+    /*height: 100vh;*/
+    /*background-color: black;*/
+    background-image: url("../../public/night_traffic_bg.jpg");
+    background-size: cover;
+    padding-bottom: 15px;
+}
+
 .services {
-    background-color: black;
-    height: 100vh;
+    /*background-color: black;*/
+    height: 70vh;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -66,4 +90,20 @@
 #book:hover, #contact:hover {
     background-color: lightgreen;
     color: black;
+}
+
+h1.title {
+    margin: 0;
+    /*padding-top: 10vh;*/
+    /*padding-left: 10vw;*/
+    color: lightgreen;
+}
+
+h1 {
+    font-family: Roboto, sans-serif;
+}
+
+.content {
+    margin:0 10% 0 10%;
+    padding-top: 5%;
 }
